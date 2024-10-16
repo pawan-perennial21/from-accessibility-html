@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const emailError = document.getElementById('emailError');
   const passwordError = document.getElementById('passwordError');
 
-  // Email and Password Validation Rules
   const validationRules = {
     email: {
       required: true,
@@ -58,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  // Adding focus and blur listeners to fields
+
   addFocusListener(emailField, 'Please enter your email.');
   addFocusListener(passwordField, 'Please enter your password.');
 
@@ -84,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         password: passwordField.value,
       });
       form.reset();
-      speakMessage('Form submitted successfully.'); // Announce successful submission
+      speakMessage('Form submitted successfully.'); 
     }
   });
 });
